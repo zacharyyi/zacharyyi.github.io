@@ -1,11 +1,21 @@
+@import "https://unpkg.com/open-props";
+@import url('quilon.css');
+
+
 body {font-family: 'Quilon-Variable';
  
-    background: rgb(102, 190, 1);      
+    background:var(--gradient-12);    
+    
+    
     
     }
 
     /*  diagnostic styling { 
   outline: 5px solid gray;
+}
+
+h1 {
+  text-align: center;
 }
 
 /* layout */
@@ -18,13 +28,17 @@ body {
   
   /* scene */
   .scene {
-    width: 300px;
+    width: 200px;
     height: 400px;
   
     /* set perspective   */
-    perspective: 600px;
+    perspective: 400px;
   }
   
+  h1 {
+    text-align: center;
+
+  }
   /* card */
   .card {
     width: 100%;
@@ -36,6 +50,8 @@ body {
   
     /* preserve child 3d   */
     transform-style: preserve-3d;
+
+    
   }
   
   /* face */
@@ -49,11 +65,11 @@ body {
   }
   
   .front {
-    background: linen;
+    background: var(--gradient-12);
   }
   
   .back {
-    background: rgb(243, 243, 241);
+    background: var(--gradient-12);
     /* flip it default   */
     transform: rotateY(180deg);
   }
