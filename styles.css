@@ -6,7 +6,12 @@ body {
   font-family: 'Quilon-Variable';
   font-size: 8px; 
 
-  background-image: var(--gradient-12);
+  
+  background-image: url("pngtree-merry-christmas-wood-plank-texture-background-picture-image_1266178.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
 }
  
 
