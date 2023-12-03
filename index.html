@@ -3,38 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Website</title>
 
   <link rel="stylesheet" href="styles.css">
 
   <script src="scripts.js" defer></script>
 
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
+<!-- 
+</head>
+<body> -->
+
+
+  <!-- <html lang="en"> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipping Card</title>
+  <style>
+
+
+
+
+
+    .card {
+      width: 400px;
+      height: 500px;
+     }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      background: var(--gradient-12);
+    
+   
+}/* Front face color */
+    
+
+    .card-back {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      padding-right: 50px; 
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      /* background-color: red; */
+
+      transform: rotateY(180deg);
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-face">
+       
 
-
-  <article class="scene">
-    <div class="card">
-  
-      <section class="front face">
-        <h1>Zachary Yi </h1>
-        <img src="me.jpeg" alt="Zachary Yi">
-      </section>
-  
-      <section class="back face">
-        <p>Hello, my name is Zachary Yi and I am an EWU student. My major is Visual Communication Design. Will be graduating the spring of 2024</p>
+         
+        <img src="me.jpeg" alt="Zachary Yi" width="250">
+        <h1> Hello, 😊😀😁</h1>
+         
+      </div>
+      <div class="card-face card-back">
+        <p>Hello, my name is Zachary Yi and I am an EWU student. My major is Visual Communication Design and I attend classes at the EWU Spokane Catayst Building.</p>
         <ul>
           <li><a href="https://www.ewu.edu/cstem/design/">Department of Design</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox/">Gmail</a></li>
         </ul>
-      </section>
-  
-    </div>
-  </article>
 
-  
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
+  
